@@ -19,6 +19,8 @@ public class Demo {
     public void beforeClass() {
 
         WebDriverManager.chromedriver().setup();
+
+        System.setProperty("webdriver.chrome.driver", "c:\\web-drivers\\chromedriver.exe");
         
         // Create a new instance of the ChromeDriver
         driver = new ChromeDriver();
