@@ -16,7 +16,7 @@ public class Demo {
     public void beforeClass() {
 
         // Create a new instance of the ChromeDriver
-        driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
 
         // Navigate to a website
         driver.get("https://www.saucedemo.com");
