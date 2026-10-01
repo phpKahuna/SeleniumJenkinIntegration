@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -11,13 +13,15 @@ import org.testng.annotations.Test;
 
 public class Demo {
 
-    public WebDriver driver;
+    WebDriver driver;
 
     @BeforeClass
     public void beforeClass() {
 
+        WebDriverManager.chromedriver().setup();
+        
         // Create a new instance of the ChromeDriver
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
 
         // Navigate to a website
         driver.get("https://www.saucedemo.com");
