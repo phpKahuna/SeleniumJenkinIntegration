@@ -35,7 +35,7 @@ public class Demo {
         @Test
     public void test1() {
         //System.out.println("test 1");
-
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
             WebElement text = driver.findElement(
                 By.xpath(
                     "//span[text()='Products']"
