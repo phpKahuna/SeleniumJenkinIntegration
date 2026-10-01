@@ -19,6 +19,7 @@ public class Demo {
     public void beforeClass() {
 
         WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().clearDriverCache().setup();
 
         System.setProperty("webdriver.chrome.driver", "c:\\web-drivers\\chromedriver.exe");
         
