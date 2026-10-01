@@ -15,9 +15,6 @@ public class Demo {
     @BeforeClass
     public void beforeClass() {
 
-        // Setup ChromeDriver using WebDriverManager
-        WebDriverManager.chromedriver().setup();
-
         // Create a new instance of the ChromeDriver
         driver = new ChromeDriver();
 
