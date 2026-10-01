@@ -36,7 +36,11 @@ public class Demo {
     public void test1() {
         //System.out.println("test 1");
 
-            WebElement text = driver.findElement(By.xpath("//span[text()='Products']"));
+            WebElement text = driver.findElement(
+                By.xpath(
+                    "//span[text()='Products']"
+                )
+            );
             //WebElement text = driver.findElement(By.xpath("//span[text()='Products']"));
 
             String originalText = "Products";
