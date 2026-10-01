@@ -10,10 +10,16 @@ import org.testng.annotations.Test;
 
 public class Demo {
 
+    public WebDriver driver;
+
     @BeforeClass
     public void beforeClass() {
 
-        WebDriver driver = new ChromeDriver();
+        // Setup ChromeDriver using WebDriverManager
+        WebDriverManager.chromedriver().setup();
+
+        // Create a new instance of the ChromeDriver
+        driver = new ChromeDriver();
 
         // Navigate to a website
         driver.get("https://www.saucedemo.com");
