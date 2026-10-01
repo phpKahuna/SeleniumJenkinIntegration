@@ -37,7 +37,7 @@ public class Demo {
         //System.out.println("test 1");
 
             WebElement text = driver.findElement(By.xpath("//span[contains(text(), 'Products')]"));
-            WebElement text = driver.findElement(By.xpath("//span[text()='Products']"));
+            //WebElement text = driver.findElement(By.xpath("//span[text()='Products']"));
 
             String originalText = "Products";
             String expectedText = text.getText();
