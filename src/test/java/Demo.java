@@ -22,7 +22,7 @@ public class Demo {
         WebDriverManager.chromedriver().setup();
         WebDriverManager.chromedriver().clearDriverCache().setup();
 
-        System.setProperty("webdriver.chrome.driver", "c:\\web-drivers\\chromedriver.exe");
+        // System.setProperty("webdriver.chrome.driver", "c:\\web-drivers\\chromedriver.exe");
         
         // Create a new instance of the ChromeDriver
         driver = new ChromeDriver();
